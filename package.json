@@ -1,0 +1,9 @@
+{
+  "name": "prova_teste_software",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^14.5.2"
+  }
+}
