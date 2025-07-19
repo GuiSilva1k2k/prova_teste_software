@@ -2,9 +2,8 @@ Cypress.Commands.add('login_e_produto', (username, password) => {
     cy.get('[data-test="username"]').type(username)
     cy.get('[data-test="password"]').type(password)
     cy.get('[data-test="login-button"]').click()
-    cy.get('[data-test="item-4-title-link"] > [data-test="inventory-item-name"]').click()
-    cy.contains('button', 'Back to products')
-    cy.contains('div', 'Sauce Labs Backpack')
+    cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').click()
+    cy.get('[data-test="shopping-cart-link"]').click()
 })
 
 Cypress.Commands.add('erro_username_is_required', () => {

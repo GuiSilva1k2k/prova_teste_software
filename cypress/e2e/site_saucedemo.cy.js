@@ -3,7 +3,7 @@ describe('acessando site saucedemo', () => {
       cy.visit('')
   })
 
-  it('login com sucesso e clica em um produto', () => {
+  it('login com sucesso e adiciona produto ao carrinho', () => {
     cy.login_e_produto('standard_user', 'secret_sauce')
   })
   
